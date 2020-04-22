@@ -1,6 +1,19 @@
-<div>
-    <h1>Example App</h1>
-    <p>Click on the button to increase counter value</p>
-    <example-button bind:name="buttonName" click="increase"></example-button>
-    <example-counter bind:value="counterValue(counter)"></example-counter>
+<style>
+    @import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+    @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    .app {
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+<div class="app w-full h-screen flex justify-center items-center">
+    <div class="text-center text-gray-700">
+        <img class="inline" src="/assets/img/logo-192x192.png" alt="">
+        <h1 class="text-3xl bold mb-16">Example Web Component Root</h1>
+        <h2 class="text-2xl bold mb-8">Button & Counter components</h2>
+        <p>Click on the button bellow to increase counter value</p>
+        <example-button bind:name="buttonName" click="increase"></example-button>
+        <example-counter bind:value="counterValue(counter)"></example-counter>
+    </div>
 </div>
+</body>
+</html>
